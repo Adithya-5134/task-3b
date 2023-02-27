@@ -87,23 +87,37 @@
                 <div class="cc">
     
                     <input type="text" id="ColorInputText">
-                    <input type="color" id="ColorInputColor">
-                    <input type="button" id="ColorButton" value="Click to change color" onclick="Changecolor()">
+                    <input type="color" id="ColorInputColor"  onclick="Changecolor1()" >
+                    <input type="button" id="ColorButton" value="CLICK"  onclick="Changecolor()" >
+                     
 
                 </div>
 
 
                     <script>
                         function Changecolor(){
-                            let color= document.getElementById('ColorInputColor').value;
-                            document.body.style.backgroundColor = color;
-                            document.getElementById('ColorInputText').value=color;
 
+                           
+
+
+                            let color= document.getElementById('ColorInputText').value;
+                            document.body.style.backgroundColor = color;
+                           
+
+
+                        
+                            
+                           
 
 
                         }
+                        function  Changecolor1(){
+                            let color1= document.getElementById('ColorInputColor').value;
+                            document.body.style.backgroundColor = color1;
 
 
+                        }
+                        
 
 
                     </script>
